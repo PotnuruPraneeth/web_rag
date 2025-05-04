@@ -1,0 +1,151 @@
+import streamlit as st
+from langchain_community.vectorstores import Chroma
+from langchain_google_vertexai import VertexAIEmbeddings
+from langchain.chat_models import init_chat_model
+from langchain_core.prompts import PromptTemplate
+st.title("WEB APPLICATION RAG")
+user_prompt = st.chat_input("write the prompt")
+if user_prompt:
+    embeddings = VertexAIEmbeddings(model="text-embedding-004")
+    # here vector requeries the embeddings to query the question
+    vector_store = Chroma(
+    # documents=documents,# document objects no need there beacuse as we already done it in main rag for vector store
+    embedding_function=embeddings, # model
+    '''When to use embedding_function:
+Context: When you're passing raw documents or queries and need 
+the vector store to calculate embeddings dynamically when the data is queried or indexed.
+ Here, the embedding_function is used because you're not providing the embeddings directly—you're
+  providing text, and the system generates embeddings for that text.'''
+  ''' why not embedings 
+   The method from_documents() is designed to handle documents and embeddings together.
+    When you pass embedding, you're passing a list of embeddings (vectors) rather than an 
+    embedding_function (which would generate embeddings from raw text).'''
+    persist_directory="./chroma_Db"
+)
+    retriver = vector_store.as_retriever()
+    retriver_resultss = retriver.invoke(user_prompt)
+    llm=init_chat_model("gemini-2.0-flash-001", model_provider="google_vertexai")
+    promt_create_template=PromptTemplate.from_template('Answer the question based on the context below {retriver_resultss} and question is {user_prompt}')
+    chain=promt_create_template | llm
+    output=chain.invoke({'retriver_resultss':retriver_resultss,'user_prompt':user_prompt})
+    st.write(output)
+
+''' Yes, you can check if a query doesn't match any content in your vector database before sending it to the LLM, and this is a smart way to save on costs.
+
+✅ How to Do It:
+When you perform a vector similarity search (e.g., using FAISS, Pinecone, Weaviate, Chroma, etc.), the response typically includes:
+
+The top-k documents (or vectors)
+
+Their similarity scores (e.g., cosine similarity or distance)
+
+🧠 Strategy to Detect “No Match”:
+Set a similarity threshold
+Define a cutoff score, like 0.75 for cosine similarity (depends on your embedding model and use case).
+If all retrieved documents are below this threshold, assume no good match found.
+
+Check top result only (or average top-k scores)
+If the top document has a very low score (e.g., 0.2), it's probably noise.
+
+Logic example:
+
+python
+Copy
+Edit
+if top_score < threshold:
+    return "No relevant content found. Please rephrase your question."
+else:
+    # proceed to LLM with the retrieved context
+Alternative approach:
+Embed the query and calculate the distance to the nearest neighbor manually. If it’s too far, avoid sending to the LLM.
+
+'''
+'''img_file.read()
+Reads the image file (.jpg) in binary format.
+
+Example output: b'\xff\xd8\xff\xe0\x00\x10JFIF...' (binary data of the image)
+
+2. base64.b64encode(...)
+Encodes the binary data into a base64 format, which is a way to represent binary data as text.
+
+This is important because HTML/CSS (in style tags) cannot use raw binary, but they can handle base64 text.
+
+3. .decode()
+Converts the base64 bytes (like b'/9j/4AAQSkZJRgABAQAAAQABAAD...') into a regular UTF-8 string.
+
+Final output: 'base64_string_here...'
+✅ Why it's Used
+Browsers can't read a local file path like C:/something.jpg from Python directly, but they can read an embedded image in base64 like this:
+
+css
+Copy
+Edit
+background-image: url("data:image/jpg;base64,/9j/4AAQSkZJRgAB...etc...");'''
+
+''' 🔹 CSS (Inside <style>...</style>)
+This defines how things look. It's like giving "style instructions".
+
+html
+Copy
+Edit
+<style>
+.black-background {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+}
+🔍 What this does:
+.black-background: This targets any element with the class name black-background.
+
+background-color: black;: Sets the background of that section to black.
+
+padding: 50px 0;: Adds space above and below the section (50px top and bottom, 0px left and right).
+
+text-align: center;: Centers any text or inline elements inside the block horizontally.
+
+css
+Copy
+Edit
+.black-background h1 {
+    font-size: 100px;
+    color: white;
+    margin: 0;
+}
+🔍 What this does:
+.black-background h1: This specifically styles the <h1> heading only inside .black-background.
+
+font-size: 100px;: Makes the text (AI 🤖) very large.
+
+color: white;: Sets the text color to white so it’s visible on the black background.
+
+margin: 0;: Removes any default spacing around the heading to keep it tight.
+
+🔹 HTML Content (Visible Structure)
+html
+Copy
+Edit
+<div class="black-background">
+    <h1>AI 🤖</h1>
+</div>
+🔍 What this does:
+<div class="black-background">: Creates a block container (like a section) with the black background and centered styling.
+
+<h1>AI 🤖</h1>: This is your main heading text showing a big "AI 🤖" emoji, styled with the rules above.
+
+Final Result:
+This creates a centered black banner section with a large white “AI 🤖” emoji inside it. '''
+
+'''  What is <span> in HTML?
+<span> is an inline HTML tag used to style or highlight a part of text without breaking the layout or creating a new block like a paragraph (<p>) or heading (<h1>).
+
+✅ Why use <span>?
+Because it's perfect for:
+
+Coloring part of a sentence
+
+Changing font size or weight of some text
+
+Applying custom styles to inline text '''
+
+'''<p>This is a <span style="color:red;">red word</span> in a sentence.</p>
+'''
