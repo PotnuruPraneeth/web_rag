@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain_community.vectorstores import Chroma
+from langchain-community.vectorstores import Chroma
 from langchain_google_vertexai import VertexAIEmbeddings
 from langchain.chat_models import init_chat_model
 from langchain_core.prompts import PromptTemplate
