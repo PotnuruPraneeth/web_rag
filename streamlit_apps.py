@@ -63,7 +63,7 @@ if user_prompt:
             st.write(f"<span style='color:red; font-size:22px;'> PROMPT:   {user_prompt}</span>", unsafe_allow_html=True)
             st.write(f"<span style='color:blue; font-size:22px;'> Answer:   {output.content}</span>", unsafe_allow_html=True)
         
-         # Optionally display all top documents with their scores
+         #  displays all top documents with their scores
         with st.expander("See retrieved documents and scores"):
             for i, (doc, score) in enumerate(results_with_scores):
                 st.markdown(f"**Document {i+1} (score: {score:.2f})**")
