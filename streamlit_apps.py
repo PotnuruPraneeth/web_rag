@@ -1,11 +1,8 @@
 import streamlit as st
-import langchain_community
 from langchain_community.vectorstores import Chroma
 from langchain_google_vertexai import VertexAIEmbeddings
 from langchain.chat_models import init_chat_model
 from langchain_core.prompts import PromptTemplate
-
-import streamlit as st
 
 # Set page config
 st.set_page_config(page_title="Robot Center", layout="wide")
