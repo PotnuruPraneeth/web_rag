@@ -3,7 +3,8 @@
 
 
 
-ai – Direct AI Powered By Quality Thought
+Gen-Ai Classroom Notes – Direct AI Powered By Quality Thought
+
 
 
 
@@ -46,6 +47,12 @@ ai – Direct AI Powered By Quality Thought
 
 
  
+
+
+
+
+
+
 
 
 
@@ -94,192 +101,95 @@ Contact
 
 
 
-Tag: ai 
 
+Gen-Ai Classroom Notes 
+
+Python Foundation
+
+8/May/2025 – Click Here
+7/May/2025 – Click Here
+6/May/2025 – Click Here
+4/May/2025 – Click Here
+3/May/2025 – Click Here
+2/May/2025 – Click Here
+30/Apr/2025 – Click Here
+29/Apr/2025 – Click Here
+28/Apr/2025 – Click Here
+27/Apr/2025 – Click Here
+26/Apr/2025 – Click Here
+24/Apr/2025 – Click Here
+23/Apr/2025 – Click Here
+22/Apr/2025 – Click Here
+17/Apr/2025 – Click Here
+16/Apr/2025 – Click Here
+15/Apr/2025 – Click Here
+
+RAG:
+
+8/May/2025 – Click Here
+7/May/2025 – Click Here
+6/May/2025 – Click Here
+3/May/2025 – Click Here
+29/Apr/2025 – Click Here
+26/Apr/2025 – Click Here
+24/Apr/2025 – Click Here
+23/Apr/2025 – Click Here
+22/Apr/2025 – Click Here
+17/Apr/2025 – Click Here
+16/Apr/2025 – Click Here
+15/Apr/2025 (1) – Click Here
+15/Apr/2025 – Click Here
+13/Apr/2025 – Click Here
+12/Apr/2025 – Click Here
+10/Apr/2025 – Click Here
+09/Apr/2025 – Click Here
+08/Apr/2025 – Click Here
+07/Apr/2025 – Click Here
+04/Apr/2025 – Click Here
+03/Apr/2025 – Click Here
+01/Apr/2025 – Click Here
+29/Mar/2025 – Click Here
+
+Prompt Engineering Techniques 
+
+27/Mar/2025 – Click Here
+26/Mar/2025 – Click Here
+25/Mar/2025 – Click Here
+
+Python
+
+23/Mar/2025 – Click Here
+22/Mar/2025 – Click Here
+19/Mar/2025 – Click Here
+18/Mar/2025 – Click Here
+17/Mar/2025 – Click Here
+16/Mar/2025 – Click Here
+15/Mar/2025 – Click Here
+13/Mar/2025 – Click Here
+12/Mar/2025 – Click Here
+11/Mar/2025 – Click Here
+09/Mar/2025 – Click Here
+08/Mar/2025 – Click Here
+06/Mar/2025 – Click Here
+05/Mar/2025 – Click Here
+04/Mar/2025 – Click Here
+27/Feb/2025 – Click Here
+26/Feb/2025 – Click Here
+25/Feb/2025 – Click Here
+24/Feb/2025 – Click Here
+23/Feb/2025 – Click Here
+22/Feb/2025 – Click Here
+20/Feb/2025 – Click Here
+19/Feb/2025 – Click Here
+18/Feb/2025 – Click Here
+17/Feb/2025 – Click Here
+14/Feb/2025 – Click Here
+13/Feb/2025 – Click Here
+12/Feb/2025 – Click Here
+11/Feb/2025 – Click Here
 
-Gen-AI Developer Classroom notes  29/04/2025
 
 
-
-Published April 29, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 26/Apr/2025
-
-Chains in Langchain Refer Here for chains api reference Lets explore chains First chain: Lets write a prompt pass the prompt to llm Second chain: Lets write a prompt pass the prompt to llm convert the output to some format Third chain Use Vector database as retriever write a prompt with context Pass the prompt… Continue reading Gen-AI Developer Classroom notes 26/Apr/2025
-
-
-Published April 26, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 24/Apr/2025
-
-Link to the notebook Refer Here Refer Here for retriever Refer Here for the implementation of text book rag with text Exercise Try building a retriever for a Directai.blog with atleast 10 to 15 pages as source
-
-
-Published April 24, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 22/Apr/2025
-
-Document Loaders Document Loaders in langchain Document loaders can read documents and give Document Object Every Document loader is derived from BaseLoader Look into jupyter notebook for text markdown word Many PDF loaders are supported All loaders Chunking Documents using Text Splitters Refer Here for Text Splitters All splitters can split documents based on chunk… Continue reading Gen-AI Developer Classroom notes 22/Apr/2025
-
-
-Published April 22, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 17/Apr/2025
-
-Google AI Studio Lets use google AI Studio to get api keys and use it with langchain GCP Account Creation Lets create a free trail gcp account Set up your account and enabling Compute Engine API Vertex API Install gcloud sdk cli
-
-
-Published April 17, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 16/Apr/2025
-
-LangChain Chat Models Refer Here for official docs Runnable: This is kind of what almost everything in langchain is derived from Chat Models offer similar interface for different models from differnt providers Providers and Model Names Refer Here for samples
-
-
-Published April 16, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 15/Apr/2025
-
-References Text Models: Restrictive functionality and not all the model are part of text generation models and Refer Here for all possible Text Completion models Prompt Template Refer Here for official docs So lets use a string prompt template Refer Here Refer Here fo the sample do
-
-
-Published April 15, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 15/Apr/2025
-
-Langchain components LangChain is a powerful framework for building applications that use Large Language Models (LLMs). It modularizes LLM workflows into reusable and extensible components, allowing developers to create complex applications like chatbots, agents, and RAG pipelines. 1. Models (LLMs, ChatModels) Purpose: To interact with language models like OpenAI’s GPT, Anthropic, HuggingFace, etc. Types: LLM:… Continue reading Gen-AI Developer Classroom notes 15/Apr/2025
-
-
-Published April 15, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 10/Apr/2025
-
-Version Control Systems A version Control System enables us to store code (Repository) Which enables multi user Which enables multiple versions Git is most popular version control system create by Linus Torvalds Git is a distributed version control system Initial configuration of git hint: Use any git cheatsheet Git commit requires username and email address… Continue reading Gen-AI Developer Classroom notes 10/Apr/2025
-
-
-Published April 10, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 09/Apr/2025
-
-Models in Hugging face Explore SpaceHub Models: Refer Here Embeddings from hugging face models Try writing a simple code using hugging face transformers for question answering from transformers import pipeline model_id = ” pipeline(‘<nlp-question>’, model=model_id, …) lets try question answering and image classification Refer Here for the Colab Notebook
-
-
-Published April 9, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 08/Apr/2025
-
-NLP (Natural Language Processing) Basic Tasks: Sentiment Analysis Summarizations Question Answering NER Hugging Face Account Creation Hugging face transformers are based on deep learning and to run deep learning models, we need to install torch Tensorflow Running Python code Locally Google Colab Basic coding approach Create a pipeline proceed with some nlp task Simple Setup… Continue reading Gen-AI Developer Classroom notes 08/Apr/2025
-
-
-Published April 8, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 07/Apr/2025
-
-Problem We have a text book, primary with text and also some images. We need to parse the text from pdf file and also images Relation between chunk and token A document is broken down into chunks. Chunk will have multiple tokens Note: If using a llm model ensure chunk does not have more tokens… Continue reading Gen-AI Developer Classroom notes 07/Apr/2025
-
-
-Published April 7, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 04/Apr/2025
-
-Lets Build an Agent for Schools (For the future sessions) Basic Idea: Make AI agent prepare question papers Also make it analyze the results and guide student with improvement areas and references to work on Lets Build a RAG for Students Basic Idea: RAG which is based on standard text books of boards A student… Continue reading Gen-AI Developer Classroom notes 04/Apr/2025
-
-
-Published April 4, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 03/Apr/2025
-
-Vector Databases Vector Databases store vectors in higher dimensions The text/images are converted into chunks and then into vectors by embeddings. Vectors are stored in the vector databases which can now help in similarity search. Usecases of Vector Databases Product search by uploading image Recommendation engines Facial recognitions How do Vector Databases search for similar… Continue reading Gen-AI Developer Classroom notes 03/Apr/2025
-
-
-Published April 3, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 01/Apr/2025
-
-Demonstration of a Very simple RAG Watch classroom recording for sbi home insurance policy alibaba 40 theives harry potter Installing ollama We will be using ollama to run smaller models on our laptops Refer Here for downloading ollama Now lets run a simple model on ollama
-
-
-Published April 1, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 29/Mar/2025
-
-RAG (Retrieval Augemented Generation) This concept was termed by facebook. Basic LLM (Prompt/Chat interface) Most of the LLMs are trained on publicly available information (Website, Books, articles …..) I want LLM to generate responses on my organization data Building a LLM: Costly RAG’s kind of solve this problem RAG Conceptually has two layer Retriever Generator:… Continue reading Gen-AI Developer Classroom notes 29/Mar/2025
-
-
-Published March 29, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 27/Mar/2025
-
-Prompting Techniques In-context learning Most LLMs maintain context that is information about the generated content we can refine the subsequent prompts with enhancements In the classroom, we generated python code to insert products into databases and then asked it to implement softdelete We have done similar stuff for reworking on French learning plan. Anthropic Anthropic… Continue reading Gen-AI Developer Classroom notes 27/Mar/2025
-
-
-Published March 27, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 25/Mar/2025
-
-AI Artificial General Intellingence is field where we have systems which behave like humans AI (Narrow AI) is field where we have system which thinks like human in a specific domain Narrow AI became popular with a subfield of AI called as Machine Learning. ML can predict or classify or clustering all based of mathematical/statistical… Continue reading Gen-AI Developer Classroom notes 25/Mar/2025
-
-
-Published March 25, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 23/Mar/2025
-
-Configuring Pytest for Projects in Python Description src/utils/ as the source package (without __init__.py) tests/utils/ for tests pytest for testing pytest-cov for coverage setup.py for editable install .coveragerc for customizing coverage pytest.ini for simplified test config Project Structure my-python-app/ â”œâ”€â”€ src/ â”‚ â””â”€â”€ utils/ â”‚ â””â”€â”€ math_utils.py â”œâ”€â”€ tests/ â”‚ â””â”€â”€ utils/ â”‚ â””â”€â”€ test_math_utils.py… Continue reading Gen-AI Developer Classroom notes 23/Mar/2025
-
-
-Published March 23, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-
-Gen-AI Developer Classroom notes 22/Mar/2025
-
-Unit Testing Goal of unit testing is to identify as many defects as possible in early stages Unit Testing: We test a unit of code with all possibilities Unit Tests are supposed to be executed after every change by any member of the team to the code. Unit Testing Frameworks Python Standard library has a… Continue reading Gen-AI Developer Classroom notes 22/Mar/2025
-
-
-Published March 22, 2025Categorized as Classroom notes Tagged ai, artificial-intelligence, data-science, Generativeai, Machine Learning, python 
-
-
-Posts pagination
-Page 1
-…
-Page 3
-Older posts 
 
 
 
@@ -298,153 +208,7 @@ Powered by WordPress.com.
 
 
 
-
  
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Loading Comments...
-
-
-
- 
-
-
-Write a Comment...
-
-
-
-
-Email (Required)
-
-
-
-Name (Required)
-
-
-
-Website
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
