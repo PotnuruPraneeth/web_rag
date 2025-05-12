@@ -69,7 +69,7 @@ langchain-core==0.3.48
 langchain-text-splitters==0.3.7
 langsmith==0.3.18
 libclang==18.1.1
-langchain-community
+langchain-community==0.0.30
 Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
@@ -155,8 +155,6 @@ tensorflow==2.19.0
 tensorflow-io-gcs-filesystem==0.31.0
 tensorflow_intel==2.18.0
 termcolor==2.5.0
-# Editable install with no version control (testing-ai==0.1)
--e c:\users\praneeth\downloads\testing-ai\src
 tf_keras==2.19.0
 tokenizers==0.21.1
 tornado==6.4.2
